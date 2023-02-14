@@ -14,12 +14,36 @@
 }
 
 .chat-container div {
-  border: 1px solid blue;
-  margin: 10px 10px 10px 10px;
+  margin: 5px 10px 5px 10px;
   padding: 10px;
 }
 
 .chat-log {
   flex: 1;
+  overflow-y: scroll;
 }
 
+.chat-message-input input {
+  background-color: rgb(220, 233, 213);
+  font-size: 18px;
+  width: 100%;
+}
+
+.chat-username {
+  background-color: rgb(204, 218, 246);
+  border-radius: 10px;
+}
+
+.chat-log div {
+  background-color: rgb(238, 204, 205);
+  border-radius: 10px;
+}
+
+.chat-item {
+  margin: 10px 0 10px 0 !important;
+}
+
+.chat-from-me {
+  text-align: right;
+  background-color: lightskyblue !important;
+}
