@@ -1,6 +1,14 @@
+import React, { useEffect } from 'react';
+
 function ChatLog(props) {
+
+  useEffect(() => {
+    var elem = document.getElementById('chat-log');
+    elem.scrollTop = elem.scrollHeight;
+  }, [props.chatLog])
+
     return (
-      <div className="chat-log">
+      <div className="chat-log" id="chat-log">
         {
           props.chatLog.map((chat, idx) => {
             if (props.username === chat.username) {
