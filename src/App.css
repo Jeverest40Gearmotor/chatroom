@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.chat-container {
+.chat-container, .chat-login-page-container {
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -46,4 +46,32 @@
 .chat-from-me {
   text-align: right;
   background-color: lightskyblue !important;
+}
+
+.chat-login-page-controls-container * {
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+}
+
+.chat-login-page-controls-container {
+  margin: 10px 100px 10px 100px;
+  font-size: 18px;
+}
+
+.chat-login-page-controls-container h4 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.chat-login-page-controls-container input {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.chat-login-page-controls-container button {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  background-color: lightskyblue;
 }
